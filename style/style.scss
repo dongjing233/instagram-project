@@ -1,0 +1,53 @@
+$color1: #ff7e67;
+$color2:#206a5d;
+@mixin center{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+header{
+    color:$color1;
+    @include center();
+    font-family: 'Anton';
+    font-size:100pt;
+    line-height: 200pt;
+}
+
+.list{
+    color:$color1;
+    font-family: 'Anton';
+    font-size:30pt;
+    line-height: 50pt;
+    justify-content: center;
+}
+
+footer{
+    color:$color1;
+    @include center();
+    font-family: 'Anton';
+    font-size:30pt;
+    line-height: 260pt;
+}
+
+.list{
+    // @include center();
+    margin:auto;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.list:visited{
+    margin:auto;
+    justify-content: center;
+    align-items:center;
+}
+
+a{
+    color:$color1;
+}
+
+body{
+    background-color:$color2;
+}
